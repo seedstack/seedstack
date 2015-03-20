@@ -1,0 +1,39 @@
+[submodule "business"]
+	path = business
+	url = git@github.com:seedstack/business.git
+[submodule "distribution"]
+	path = distribution
+	url = git@github.com:seedstack/distribution.git
+[submodule "ecommerce-domain-sample"]
+	path = ecommerce-domain-sample
+	url = git@github.com:seedstack/ecommerce-domain-sample.git
+[submodule "i18n-function"]
+	path = i18n-function
+	url = git@github.com:seedstack/i18n-function.git
+[submodule "io-function"]
+	path = io-function
+	url = git@github.com:seedstack/io-function.git
+[submodule "seed"]
+	path = seed
+	url = git@github.com:seedstack/seed.git
+[submodule "showcase"]
+	path = showcase
+	url = git@github.com:seedstack/showcase.git
+[submodule "w20"]
+	path = w20
+	url = git@github.com:seedstack/w20.git
+[submodule "w20-function"]
+	path = w20-function
+	url = git@github.com:seedstack/w20-function.git
+[submodule "poms"]
+	path = poms
+	url = git@github.com:seedstack/poms.git
+[submodule "pep"]
+	path = pep
+	url = git@github.com:seedstack/project-enhancement-proposals.git
+[submodule "w20-business-theme"]
+	path = w20-business-theme
+	url = git@github.com:seedstack/w20-business-theme.git
+[submodule "website"]
+	path = website
+	url = git@github.com:seedstack/website.git
