@@ -11,7 +11,14 @@ init:
 
 # Update all code to the latest version
 fetch:
-	git submodule foreach git fetch
+	git submodule foreach git fetch upstream
+
+# Set a submodule origin to a specific fork url and rename the official remote to upstream 
+set-fork:
+	@read -p "Enter module name: " forkname; \
+	read -p "Enter fork url: " forkurl; \
+	(cd $$forkname && git remote rename origin upstream && git remote add origin $$forkurl); \
+	echo "Done.";
 
 # Build all the stack
 build: build-distribution build-showcase
