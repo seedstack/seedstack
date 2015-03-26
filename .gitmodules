@@ -37,3 +37,6 @@
 [submodule "website"]
 	path = website
 	url = git@github.com:seedstack/website.git
+[submodule "account-management-function"]
+	path = account-management-function
+	url = git@github.com:seedstack/account-management-function.git
