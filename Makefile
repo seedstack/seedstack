@@ -4,24 +4,27 @@ MVN_THREADS=1C
 run-showcase: build-showcase
 	(cd showcase/web && mvn jetty:run)
 
-# Init the submodules
+# Init the submodules, set the official repo as remote upstream and checkout master
 init:
 	git submodule update --init
+	git remote rename origin upstream
+	git submodule foreach git remote rename origin upstream
 	git submodule foreach git checkout master
 
-# Update all code to the latest version
+# Fetch all submodules upstream
 fetch:
 	git submodule foreach git fetch upstream
+
+# FF pull of all submodules from upstream
+update:
+	git submodule foreach git pull --ff-only upstream master:master
 
 # Set a submodule origin to a specific fork url and rename the official remote to upstream 
 setup-fork:
 	@read -p "Enter module name: " forkname; \
 	read -p "Enter fork url: " forkurl; \
-	(cd $$forkname && git remote rename origin upstream && git remote add origin $$forkurl && git fetch origin && git branch master --set-upstream-to origin/master); \
+	(cd $$forkname && git remote add origin $$forkurl && git fetch origin && git branch master --set-upstream-to origin/master); \
 	echo "Done.";
-
-# Build all the stack
-build: build-distribution build-showcase
 
 # Clean all the build outputs
 clean:
@@ -33,32 +36,32 @@ clean:
 build-poms: 
 	(cd poms && mvn -T${MVN_THREADS} install)
 
-build-seed: build-poms
+build-seed:
 	(cd seed && mvn -T${MVN_THREADS} install)
 
 build-w20:
 	(cd w20 && npm install && grunt)
 
-build-w20-business-theme: build-w20
+build-w20-business-theme:
 	(cd w20-business-theme && npm install && grunt)
 
-build-business: build-seed build-poms
+build-business:
 	(cd business && mvn -T${MVN_THREADS} install)
 
-build-io-function: build-seed build-poms
+build-io-function:
 	(cd io-function && mvn -T${MVN_THREADS} install)
 
-build-i18n-function: build-business build-seed build-poms
+build-i18n-function:
 	(cd i18n-function && mvn -T${MVN_THREADS} install)
 
-build-w20-function: build-seed build-poms build-w20
+build-w20-function:
 	(cd w20-function && mvn -T${MVN_THREADS} install)
 
-build-distribution: build-poms build-seed build-business build-w20-function build-io-function build-i18n-function
+build-distribution:
 	(cd distribution && mvn -T${MVN_THREADS} install)
 
-build-ecommerce-domain-sample: build-distribution
+build-ecommerce-domain-sample:
 	(cd ecommerce-domain-sample && mvn -T${MVN_THREADS} install)
 
-build-showcase: build-distribution build-ecommerce-domain-sample
+build-showcase:
 	(cd showcase && mvn -T${MVN_THREADS} install)

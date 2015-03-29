@@ -40,3 +40,6 @@
 [submodule "account-management-function"]
 	path = account-management-function
 	url = git@github.com:seedstack/account-management-function.git
+[submodule "seed-spring-extensions"]
+	path = seed-spring-extensions
+	url = git@github.com:seedstack/seed-spring-extensions.git
