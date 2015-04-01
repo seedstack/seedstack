@@ -9,19 +9,12 @@ purpose.
 The following commands require Git installed, and an environment able
 to use make. Windows users take a look at [babun](https://github.com/babun/babun).
 
-    git clone file:////B932250/gitrepo/seedstack
-    git submodule init
-    git submodule update
-    make build
+    git clone git@github.com:seedstack/seedstack.git
+    make init
 
-This will clone all the seedstack projects and build them in the right
-order, i.e. according to dependencies.
+If you want to update all the projects to the latest master use the following command:
 
-If you want to update all the projects use the following command:
-
-    git submodule foreach git fetch
-
-Be careful with a `foreach git pull` !
+    make update
 
 # Usage of submodule
 
