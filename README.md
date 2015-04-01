@@ -1,4 +1,4 @@
-# SeedStack [![Stories in Ready](https://badge.waffle.io/seedstack/seedstack.png?label=ready&title=Ready)](https://waffle.io/seedstack/seedstack)
+# SeedStack
 
 The seedstack repository contains git submodules for all seedstack
 projects. It is used only by seedstack contributors for development
