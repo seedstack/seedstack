@@ -46,3 +46,6 @@
 [submodule "tools"]
 	path = tools
 	url = git@github.com:seedstack/tools.git
+[submodule "generator-w20"]
+	path = generator-w20
+	url = git@github.com:seedstack/generator-w20.git
