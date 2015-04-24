@@ -43,3 +43,6 @@
 [submodule "seed-spring-extensions"]
 	path = seed-spring-extensions
 	url = git@github.com:seedstack/seed-spring-extensions.git
+[submodule "tools"]
+	path = tools
+	url = git@github.com:seedstack/tools.git
