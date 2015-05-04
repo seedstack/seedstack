@@ -7,6 +7,9 @@
 [submodule "ecommerce-domain-sample"]
 	path = ecommerce-domain-sample
 	url = git@github.com:seedstack/ecommerce-domain-sample.git
+[submodule "batch-monitoring-function"]
+	path = batch-monitoring-function
+	url = git@github.com:seedstack/batch-monitoring-function.git
 [submodule "i18n-function"]
 	path = i18n-function
 	url = git@github.com:seedstack/i18n-function.git
