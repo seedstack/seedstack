@@ -52,6 +52,6 @@
 [submodule "generator-w20"]
 	path = generator-w20
 	url = git@github.com:seedstack/generator-w20.git
-[submodule "batch-monitoring-function"]
-	path = batch-monitoring-function
-	url = git@github.com:seedstack/batch-monitoring-function.git
+[submodule "w20-simple-theme"]
+	path = w20-simple-theme
+	url = git@github.com:seedstack/w20-simple-theme.git
