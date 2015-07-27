@@ -4,9 +4,6 @@
 [submodule "distribution"]
 	path = distribution
 	url = git@github.com:seedstack/distribution.git
-[submodule "ecommerce-domain-sample"]
-	path = ecommerce-domain-sample
-	url = git@github.com:seedstack/ecommerce-domain-sample.git
 [submodule "batch-monitoring-function"]
 	path = batch-monitoring-function
 	url = git@github.com:seedstack/batch-monitoring-function.git
@@ -19,9 +16,6 @@
 [submodule "seed"]
 	path = seed
 	url = git@github.com:seedstack/seed.git
-[submodule "showcase"]
-	path = showcase
-	url = git@github.com:seedstack/showcase.git
 [submodule "w20"]
 	path = w20
 	url = git@github.com:seedstack/w20.git
@@ -55,3 +49,12 @@
 [submodule "w20-simple-theme"]
 	path = w20-simple-theme
 	url = git@github.com:seedstack/w20-simple-theme.git
+[submodule "seedstack-maven-plugin"]
+	path = seedstack-maven-plugin
+	url = git@github.com:seedstack/seedstack-maven-plugin.git
+[submodule "audit-function"]
+	path = audit-function
+	url = git@github.com:seedstack/audit-function.git
+[submodule "samples"]
+	path = samples
+	url = git@github.com:seedstack/samples.git
