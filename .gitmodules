@@ -58,3 +58,6 @@
 [submodule "samples"]
 	path = samples
 	url = git@github.com:seedstack/samples.git
+[submodule "smoke-tests"]
+	path = smoke-tests
+	url = git@github.com:seedstack/smoke-tests.git
