@@ -6,18 +6,18 @@ run-showcase: build-showcase
 
 # Init the submodules, set the official repo as remote upstream and checkout master
 init:
-	git submodule update --init
+	git submodule update --recursive --init
 	git remote rename origin upstream
-	git submodule foreach git remote rename origin upstream
-	git submodule foreach git checkout master
+	git submodule foreach --recursive git remote rename origin upstream
+	git submodule foreach --recursive git checkout master
 
 # Fetch all submodules upstream
 fetch:
-	git submodule foreach git fetch upstream
+	git submodule foreach --recursive git fetch upstream
 
 # FF pull of all submodules from upstream
 update:
-	git submodule foreach git stash && git checkout master && git pull --ff-only upstream master:master
+	git submodule foreach --recursive "git stash && git checkout master && git pull --ff-only upstream master:master"
 
 # Set a submodule origin to a specific fork url and rename the official remote to upstream 
 setup-fork:
