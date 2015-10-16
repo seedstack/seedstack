@@ -2,11 +2,16 @@
 
 This meta-repository contains the full stack as Git submodules. 
 
-You can update them to the latest commit on their master branch with the following command:
+# Usage
+
+You can initialize all submodules to the tip of their master branch and checkout it with the following commands:
+
+    git submodule update --remote --recursive --init
+    git submodule foreach --recursive git checkout master
+    
+Later, you may need to update all submodules to the tip of their master branch again:     
 
     git submodule update --remote --recursive
-    
-Add the `--init` option to initialize submodules (the first time, just after cloning).
 
 # Meta
 
