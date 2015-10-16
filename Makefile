@@ -1,9 +1,3 @@
-MVN_THREADS=1C
-
-# Run the showcase webapp in jetty
-run-showcase: build-showcase
-	(cd showcase/web && mvn jetty:run)
-
 # Init the submodules, set the official repo as remote upstream and checkout master
 init:
 	git submodule update --recursive --init
