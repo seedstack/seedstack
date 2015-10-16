@@ -1,7 +1,7 @@
 # SeedStack
 
 This repository contains all things meta about SeedStack like contributing rules, legal terms,
-assets, the list of contributors, ...
+assets, the list of contributors, etc...
 
 # Contributing to SeedStack
 
@@ -22,5 +22,5 @@ Additional legal terms are available under the [legal subdirectory](../../tree/m
 
 # Logo
 
-SeedStack logo is available in various sizes and format in the [assets/logo subdirectory](../../tree/master/assets/logo) of this
+SeedStack logo is available in various sizes and formats in the [assets/logo subdirectory](../../tree/master/assets/logo) of this
 repository. The logo is copyrighted by "The SeedStack Authors". Please ask us the permission before any use of the logo.
