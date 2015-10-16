@@ -1,8 +1,12 @@
 # SeedStack
 
-This meta-repository contains the full stack as Git submodules. You can update them to the latest commit on their master branch with the following command:
+This meta-repository contains the full stack as Git submodules. 
+
+You can update them to the latest commit on their master branch with the following command:
 
     git submodule update --remote --recursive
+    
+Add the `--init` option to initialize de submodules (the first time, just after cloning).
 
 # Meta
 
