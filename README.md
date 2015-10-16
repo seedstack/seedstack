@@ -6,7 +6,7 @@ You can update them to the latest commit on their master branch with the followi
 
     git submodule update --remote --recursive
     
-Add the `--init` option to initialize de submodules (the first time, just after cloning).
+Add the `--init` option to initialize submodules (the first time, just after cloning).
 
 # Meta
 
