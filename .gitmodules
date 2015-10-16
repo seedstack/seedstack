@@ -1,0 +1,20 @@
+[submodule "addons"]
+	path = addons
+	url = git@github.com:seedstack/addons
+	branch = master
+[submodule "core"]
+	path = core
+	url = git@github.com:seedstack/core
+	branch = master
+[submodule "website"]
+	path = website
+	url = git@github.com:seedstack/website
+	branch = master
+[submodule "pep"]
+	path = pep
+	url = git@github.com:seedstack/pep
+	branch = master
+[submodule "samples"]
+	path = samples
+	url = git@github.com:seedstack/samples
+	branch = master
