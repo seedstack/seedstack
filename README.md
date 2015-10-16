@@ -1,6 +1,12 @@
 # SeedStack
 
-This repository contains all things meta about SeedStack like contributing rules, legal terms,
+This meta-repository contains the full stack as Git submodules. You can update them to the latest commit on their master branch with the following command:
+
+    git submodule update --remote --recursive
+
+# Meta
+
+This repository also contains all things meta about SeedStack like contributing rules, legal terms,
 assets, the list of contributors, etc...
 
 # Contributing to SeedStack
