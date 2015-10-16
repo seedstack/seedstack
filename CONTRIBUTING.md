@@ -67,31 +67,3 @@ You can then proceed to submit a Pull Request on the official repository, where 
 You may have to modify you code after the Pull Request creation. In that case, don't forget to resquash all your commits into one. The Pull Request will be automatically updated.
 
 Please note that when you rebase your branch or squash commits after having already pushed a version on GitHub, you will need to push-force (`git push --force ...`) it. 
-
-## Using the meta-repository
-
-If you need to contribute to the whole stack you may find easier to use the [SeedStack meta repository](https://github.com/seedstack/seedstack) as an entry point. It regroups all the other repositories as [Git submodules](http://git-scm.com/book/be/v2/Git-Tools-Submodules). This meta-repository contains a Makefile for easy maintenance of all submodules. You need to have GNU make installed to be able to use it.
-
-### Clone the meta repository
-
-Fork [seedstack/seedstack](https://github.com/seedstack/seedstack) in your personal GitHub account.
-
-Clone the fork on your computer:
-
-    git clone your-fork-url
-
-Then initialize the submodules with :
-    
-    cd seedstack
-    make init
-
-### Work in a submodule
-
-You need to manually fork the module corresponding repository on GitHub, if necessary.
-
-The following command will map the submodule to your fork and add the `upstream` remote to the official repository automatically:
-
-    make setup-fork
-
-This command will ask for the name of the submodule and the fork url as interactive input.
-
