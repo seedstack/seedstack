@@ -24,6 +24,10 @@ The CONTRIBUTING.md file in this repository defines the global contribution rule
 more specific rules may apply on some repositories. When a specific CONTRIBUTING.md file is available in a 
 repository, please follow its rules in addition to the global rules.
 
+# Issue tracking
+
+All SeedStack issues are aggregated on [this Waffle board](https://waffle.io/seedstack/seedstack).
+
 # Copyright and license
 
 SeedStack source code and documentation is copyrighted by "The SeedStack Authors", whose list is available in 
