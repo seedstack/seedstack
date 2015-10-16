@@ -1,4 +1,4 @@
-# Meta
+# SeedStack
 
 This repository contains all things meta about SeedStack like contributing rules, legal terms,
 assets, the list of contributors, ...
