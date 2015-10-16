@@ -18,3 +18,11 @@
 	path = samples
 	url = git@github.com:seedstack/samples
 	branch = master
+[submodule "themes"]
+	path = themes
+	url = git@github.com:seedstack/themes.git
+	branch = master
+[submodule "distribution"]
+	path = distribution
+	url = git@github.com:seedstack/distribution.git
+	branch = master
