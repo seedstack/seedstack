@@ -26,3 +26,7 @@
 	path = distribution
 	url = git@github.com:seedstack/distribution.git
 	branch = master
+[submodule "poms"]
+	path = poms
+	url = git@github.com:seedstack/poms.git
+	branch = master
