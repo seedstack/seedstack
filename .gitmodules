@@ -34,3 +34,7 @@
 	path = javadoc
 	url = git@github.com:seedstack/javadoc.git
 	branch = master
+[submodule "seedstack-maven-plugin"]
+	path = maven-plugin
+	url = git@github.com:seedstack/seedstack-maven-plugin.git
+	branch = master
