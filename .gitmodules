@@ -30,3 +30,7 @@
 	path = poms
 	url = git@github.com:seedstack/poms.git
 	branch = master
+[submodule "javadoc"]
+	path = javadoc
+	url = git@github.com:seedstack/javadoc.git
+	branch = master
