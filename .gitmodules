@@ -38,3 +38,7 @@
 	path = maven-plugin
 	url = git@github.com:seedstack/seedstack-maven-plugin.git
 	branch = master
+[submodule "hub"]
+	path = hub
+	url = git@github.com:seedstack/hub.git
+	branch = master
